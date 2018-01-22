@@ -10,7 +10,7 @@ _This is the Weekend-Monday Homework Project for Week Four of Intro to Programmi
 
 ## Location
 
-_You can find this file at <repository>_
+_You can find this file at https://github.com/agro23/address-book _
 
 ## Rules for the Address book assignment
 
@@ -22,9 +22,7 @@ _You can find this file at <repository>_
 
 ### _The following specs are included in the program:_
 
-**Take input from the user and add records to the user's Contact list**
-**Also display the first name and last name of the contact**
-**If the contact name is clicked on, display the full address on screen.**
+TBD
 
 * Refactor code and clean up code
 
