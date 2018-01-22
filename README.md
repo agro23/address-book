@@ -10,7 +10,7 @@ _This is the Weekend-Monday Homework Project for Week Four of Intro to Programmi
 
 ## Location
 
-_You can find this file at https://github.com/agro23/address-book _
+You can find this file at https://github.com/agro23/address-book
 
 ## Rules for the Address book assignment
 
