@@ -2,7 +2,7 @@
 
 #### _Address book program, 01/19/18_
 
-#### _**Andy Grossberg**_
+#### _**Andy Grossberg and Michael Albers**_
 
 ## Description
 
@@ -10,7 +10,8 @@ _This is the Weekend-Monday Homework Project for Week Four of Intro to Programmi
 
 ## Location
 
-You can find this file at https://github.com/agro23/address-book
+You can find this file at https://github.com/agro23/address-book or
+https://github.com/mikealbers/address-book
 
 ## Rules for the Address book assignment
 
@@ -24,7 +25,7 @@ You can find this file at https://github.com/agro23/address-book
 
 TBD
 
-* Refactor code and clean up code
+* Refactor and clean up code
 
 ## Setup/Installation Requirements
 
@@ -37,7 +38,10 @@ _There are no known issues at this time. However, the program does not catch non
 
 ## Support and contact details
 
-_You can contact me at andy.grossberg@gmail.com_
+_You can contact us at:_
+
+* andy.grossberg@gmail.com
+* albersmichael@tutanota.com
 
 ## Technologies Used
 
@@ -47,4 +51,4 @@ _Uses HTML, CSS, javascript, and jQuery._
 
 *Distributed under the GPL*
 
-Copyright (c) 2018 **_Andy Grossberg_**
+Copyright (c) 2018 **_Andy Grossberg_ & _MichaelAlbers_**
