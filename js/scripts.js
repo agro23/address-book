@@ -20,49 +20,39 @@ Address.prototype.fullAddress = function() {
 }
 
 function resetFields() {
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
-    $("input.new-street").val("");
-    $("input.new-city").val("");
-    $("input.new-state").val("");
+    // $("input#new-first-name").val("");
+    // $("input#new-last-name").val("");
+    // $("input.new-street").val("");
+    // $("input.new-city").val("");
+    // $("input.new-state").val("");
+    $('#new-contact')[0].reset();
+}
+
+function newAddresses(){
+  var addressWrapper = '<div class="new-address">' +
+                               '<div class="form-group">' +
+                                 '<label for="new-street">Street</label>' +
+                                 '<input type="text" class="form-control new-street">' +
+                               '</div>' +
+                               '<div class="form-group">' +
+                                 '<label for="new-city">City</label>' +
+                                 '<input type="text" class="form-control new-city">' +
+                               '</div>' +
+                               '<div class="form-group">' +
+                                 '<label for="new-state">State</label>' +
+                                 '<input type="text" class="form-control new-state">' +
+                               '</div>' +
+                             '</div>';
+  $("#new-addresses").append(addressWrapper);
 }
 
 // user interface logic
-$("#add-address").click(function() {
-    $("#new-addresses").append('<div class="new-address">' +
-                                 '<div class="form-group">' +
-                                   '<label for="new-street">Street</label>' +
-                                   '<input type="text" class="form-control new-street">' +
-                                 '</div>' +
-                                 '<div class="form-group">' +
-                                   '<label for="new-city">City</label>' +
-                                   '<input type="text" class="form-control new-city">' +
-                                 '</div>' +
-                                 '<div class="form-group">' +
-                                   '<label for="new-state">State</label>' +
-                                   '<input type="text" class="form-control new-state">' +
-                                 '</div>' +
-                               '</div>');
-  });
 
   $(document).ready(function() {
 
     $("#add-address").click(function() {
-      $("#new-addresses").append('<div class="new-address">' +
-                                   '<div class="form-group">' +
-                                     '<label for="new-street">Street</label>' +
-                                     '<input type="text" class="form-control new-street">' +
-                                   '</div>' +
-                                   '<div class="form-group">' +
-                                     '<label for="new-city">City</label>' +
-                                     '<input type="text" class="form-control new-city">' +
-                                   '</div>' +
-                                   '<div class="form-group">' +
-                                     '<label for="new-state">State</label>' +
-                                     '<input type="text" class="form-control new-state">' +
-                                   '</div>' +
-                                 '</div>');
-    });
+      newAddresses();
+    })
 
     $("form#new-contact").submit(function(event) {
       event.preventDefault();
@@ -88,7 +78,7 @@ $("#add-address").click(function() {
         $(".last-name").text(newContact.lastName);
         $("ul#addresses").text("");
         newContact.addresses.forEach(function(address) {
-        $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
+          $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
         });
       });
 
